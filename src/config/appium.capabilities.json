@@ -1,0 +1,14 @@
+{
+    "ios": [
+        {
+            "device": "iPhone 11 Pro Max",
+            "os_version": "13"
+        }
+    ],
+    "android": [
+        {
+            "device": "Google Pixel 3",
+            "os_version": "9.0"
+        }
+    ]
+}

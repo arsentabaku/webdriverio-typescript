@@ -8,12 +8,9 @@
             "*": [ "./*" ],
             "src/*": ["./src/*"]
         },
-        "types": ["node", "webdriverio/sync", "@wdio/mocha-framework"],
+        "types": ["node", "webdriverio/async", "@wdio/mocha-framework"],
     },
     "include": [
         "./src/**/*.ts"
-    ],
-    "exclude": [
-        "src/concepts"
     ]
 }

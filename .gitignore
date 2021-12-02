@@ -3,3 +3,4 @@ node_modules
 errorShots
 lib
 package-lock.json
+src/config/e2e.env.json

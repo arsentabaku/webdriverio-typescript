@@ -4,34 +4,12 @@
   "description": "Provides examples of how to use TypeScript with the webdriver.io api. Tests executed against http://the-internet.herokuapp.com..",
   "main": "index.js",
   "scripts": {
-    "test": "wdio wdio.conf.js",
-    "lint": "tslint --fix src/**/*.ts",
-    "moveJsonFiles": "copyfiles -u 1 src/selectors/* src/config/* lib",
-    "build": "npm run lint && rimraf lib && npm run moveJsonFiles && tsc --outDir lib"
+    "e2e.android": "npm run build && npx wdio wdio.conf.js android",
+    "e2e.ios": "npm run build && npx wdio wdio.conf.js ios",
+    "build": "rimraf lib && tsc --outDir lib"
   },
-  "pre-commit": [
-    "lint",
-    "build",
-    "test"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jdavis61/webdriverio-typescript-examples.git"
-  },
-  "keywords": [
-    "webdriverio",
-    "selenium",
-    "nodejs",
-    "ts",
-    "typescript"
-  ],
-  "author": "James Davis",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jdavis61/webdriverio-typescript-examples/issues"
-  },
-  "homepage": "https://github.com/jdavis61/webdriverio-typescript-examples#readme",
   "dependencies": {
+    "browserstack-local": "1.4.8",
     "webdriverio": "^7.7.4"
   },
   "devDependencies": {
