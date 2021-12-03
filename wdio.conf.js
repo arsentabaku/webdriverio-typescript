@@ -34,12 +34,12 @@ exports.config = {
   connectionRetryCount: 3,
 
   framework: "mocha",
-  reporters: ["dot", "spec"],
+  reporters: ["spec"],
   mochaOpts: {
     ui: "bdd",
     timeout: 30000,
   },
-  
+
   autoCompileOpts: {
     autoCompile: true,
     tsNodeOpts: {

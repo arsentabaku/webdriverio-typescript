@@ -4,11 +4,8 @@
         "module": "commonjs",
         "esModuleInterop": true,
         "baseUrl": ".",
-        "paths": {
-            "*": [ "./*" ],
-            "src/*": ["./src/*"]
-        },
         "types": ["node", "webdriverio/async", "@wdio/mocha-framework"],
+        "strict": true,
     },
     "include": [
         "./src/**/*.ts"
