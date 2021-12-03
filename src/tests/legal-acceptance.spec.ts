@@ -1,4 +1,4 @@
-import NavigationMenu from "../pages/NavigationMenu";
+import NavigationMenu from "../pages/legal-acceptance";
 
 describe("Hovers test", () => {
   it("should accept terms and conditions", async () => {
