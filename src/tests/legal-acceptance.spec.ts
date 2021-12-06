@@ -1,9 +1,8 @@
-import NavigationMenu from "../pages/legal-acceptance";
+import { LegalAcceptance } from "../utilities/legal-acceptance-utility";
 
 describe("Hovers test", () => {
   it("should accept terms and conditions", async () => {
-    const navMenu = new NavigationMenu();
-    navMenu.acceptTermsAndConditions();
+    LegalAcceptance.acceptTermsAndConditions();
     const acceptnBtn1 = await $("~home.overlay.legalAccept.controlBtn.accept");
     await acceptnBtn1.waitForDisplayed({ timeout: 3000 });
     await acceptnBtn1.click();
